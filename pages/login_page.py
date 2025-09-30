@@ -8,9 +8,11 @@ class LoginPage:
         self.sign_in_btn=page.locator("button[type=submit]")
     def click_on_management_admin(self):
         self.managment_admin_tab.click()
-    def login(self,userName,password,base_url):
+    def in_login(self,userName,password,base_url):
       
         self.page.goto(base_url)
         self.mobile_num.fill(userName)
         self.password.fill(password)
-        self.sign_in_btn.click()
+       
+    def login(self):
+         self.sign_in_btn.click()
