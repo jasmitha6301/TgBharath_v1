@@ -16,3 +16,4 @@ class LoginPage:
        
     def login(self):
          self.sign_in_btn.click()
+         

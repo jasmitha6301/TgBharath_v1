@@ -1,0 +1,7 @@
+pytest
+pytest-bdd
+pytest-html
+pytest-base-url
+playwright
+allure-pytest
+pyyaml
