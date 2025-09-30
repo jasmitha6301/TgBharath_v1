@@ -23,7 +23,7 @@ def browser():
        with open("config/config.yaml") as f:
         config=yaml.safe_load(f)
        browser_name = config.get("browser", "chromium")
-       browser = getattr(p, browser_name).launch(headless=False)
+       browser = getattr(p, browser_name).launch()
        time.sleep(10)
        yield browser
        browser.close()
